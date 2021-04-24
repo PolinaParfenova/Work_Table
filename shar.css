@@ -1,0 +1,91 @@
+#circle{
+    border-radius: 50%;
+    background-color: rgb(157, 255, 0);
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    top: 50px;
+    left: 50px;
+    position: relative;
+    cursor: pointer;
+}
+
+#circle2{
+    border-radius: 50%;
+    background-color: rgb(251, 255, 0);
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    top: 70px;
+    left: 50px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.circle3{
+    position: relative;
+    border-radius: 50%;
+    background-color: rgb(253, 165, 0);
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    top: 90px;
+    left: 50px;
+    cursor: pointer;  
+    animation: shareleft 2s linear infinite ;
+    animation-delay: 2s;
+    animation-direction: alternate-reverse;
+    
+}
+
+ @keyframes shareleft{
+    0%{left: 350px;}
+    100%{left:50px;} 
+
+}
+
+.circle4{
+    border-radius: 50%;
+    background-color: rgb(206, 0, 0);
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    top: 110px;
+    left: 50px;
+    position: relative;
+    cursor: pointer; 
+    animation: share 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+    animation-direction: alternate-reverse;
+    animation-delay: 200ms;
+}
+
+@keyframes share{
+    0%{top: -200px;}
+    100%{top: 100px}
+}
+
+
+.circle5{
+    position: absolute;
+    border-radius: 50%;
+    background-color: rgb(158, 226, 217);
+    height: 100px;
+    width: 100px;
+    margin: 0;
+    cursor: pointer;
+    top: 530px;
+    left: 50px;
+    transition: transform 0.1s cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+.container{
+    position:relative;
+    width:100%;
+    height:700px;
+    border-radius:5px;
+    margin-top:90px;
+    margin: 0 ;
+    overflow:hidden;
+    background-color:#12172e;
+  }
